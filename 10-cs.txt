@@ -1,0 +1,27 @@
+Console.WriteLine("Ingrece el precio");
+float precio = float.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese la cantidad");
+float cantidad = float.Parse(Console.ReadLine());
+
+float descuento = 0;
+float sindescuento = cantidad * precio;
+if (cantidad>=5 & cantidad<10)
+{
+    descuento = 5;
+}
+else if (cantidad>=10 )
+{
+    descuento= 8;
+}
+if (descuento > 1)
+{
+    float valordescuento = sindescuento * descuento / 100;
+    float preciofinal = sindescuento - valordescuento;
+    Console.WriteLine($"el precio es {preciofinal}");
+}
+else
+{
+
+    Console.WriteLine($"el precio es {sindescuento}");
+}
+

@@ -1,0 +1,27 @@
+
+Console.WriteLine("Ingrese el tamaño de la pizza");
+float tamaño= float.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese el numero de ingredientes adicionales");
+float ingredientes = float.Parse(Console.ReadLine());
+float preciofinal = 0;
+float precioingrediente = 4000;
+
+switch (tamaño)
+{
+    case 1:
+        preciofinal = 15000;
+        preciofinal = preciofinal + (ingredientes * precioingrediente);
+        break;
+    case 2:
+        preciofinal = 24000;
+        preciofinal = preciofinal + (ingredientes * precioingrediente);
+        break;
+    case 3:
+        preciofinal = 36000;
+        preciofinal = preciofinal + (ingredientes * precioingrediente);
+        break;
+}
+
+Console.WriteLine(preciofinal);
+
+
